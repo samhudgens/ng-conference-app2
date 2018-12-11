@@ -1,0 +1,15 @@
+<div class="row col-md-8">
+  <button class="btn btn-primary"
+          routerLink='tracks/add'>Add a New</button>
+</div>
+<div class="row" *ngIf="tracks">
+  <div class="col-md-4 left">
+    <ul *ngFor="let track of tracks">
+      <li>{{ track.name }}</li>
+    </ul>
+  </div>
+  <div class="col-md-12 right">
+    <router-outlet></router-outlet>
+  </div>
+</div>  
+
