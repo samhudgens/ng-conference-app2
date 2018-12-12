@@ -5,6 +5,8 @@ import { TracksComponent } from "./components/tracks/tracks.component";
 import { AddTrackComponent } from "./components/tracks/add-track/add-track.component";
 import { SpeakersComponent } from "./components/speakers/speakers.component";
 import { AddSpeakerComponent } from "./components/speakers/add-speaker/add-speaker.component";
+import { SessionsComponent } from "./components/sessions/sessions.component";
+import { AddSessionComponent } from "./components/sessions/add-session/add-session.component";
 
 const appRoutes : Routes = [
   { path: '', component: TracksComponent },
@@ -16,6 +18,11 @@ const appRoutes : Routes = [
   { path: 'speakers', component: SpeakersComponent,
     children: [
       { path: 'add', component: AddSpeakerComponent }
+    ]
+  },
+  { path: 'sessions', component: SessionsComponent,
+    children: [
+      { path: 'add', component: AddSessionComponent }
     ]
   }
 ];

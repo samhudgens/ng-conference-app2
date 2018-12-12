@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-md-4 mx-auto">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="text-center pb-4 pt-3">
+          Add here a New Session
+        </h4>
+        <form (submit)="onSubmit()">
+          <div class="form-group">
+            <label for="name">Name : </label>
+            <input type="text" name="name" [(ngModel)]="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="timeStart">Start Time : </label>&nbsp;&nbsp;
+            <input type="text" name="timeStart" [(ngModel)]="timeStart" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="timeEnd">End Time : </label>&nbsp;&nbsp;
+            <input type="text" name="timeEnd" [(ngModel)]="timeEnd" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="location">Location : </label>&nbsp;&nbsp;
+            <input type="text" name="location" [(ngModel)]="location" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="description">Description : </label>&nbsp;&nbsp;
+            <input type="text" name="description" [(ngModel)]="description" class="form-control" required>
+          </div>
+
+          <!-- buttons for adding speakers and sessions will go here -->
+
+
+          <!-- <div class="form-group">
+            <label for="speakerName">Email : </label>&nbsp;&nbsp;
+            <input type="email" name="speakerName" [(ngModel)]="speakerName" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="tracks">Phone : </label>&nbsp;&nbsp;
+            <input type="text" name="tracks" [(ngModel)]="tracks" class="form-control" required>
+          </div> -->
+        
+          <input type="submit" value="Submit" class="btn btn-primary btn-block">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

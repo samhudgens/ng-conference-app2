@@ -1,11 +1,11 @@
 <div class="row col-md-8">
   <button class="btn btn-primary"
-          routerLink='speakers/add'>Add a New</button>
+          routerLink='sessions/add'>Add a New</button>
 </div>
-<div class="row" *ngIf="speakers">
+<div class="row" *ngIf="sessions">
   <div class="col-md-4 left">
-    <ul *ngFor="let speaker of speakers">
-      <li>{{ speaker.name }}</li>
+    <ul *ngFor="let session of sessions">
+      <li>{{ session.name }}</li>
     </ul>
   </div>
 </div>  

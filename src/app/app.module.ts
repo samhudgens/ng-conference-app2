@@ -16,6 +16,8 @@ import { AddTrackComponent } from './components/tracks/add-track/add-track.compo
 import { AppRoutingModule } from './app-routing.module';
 import { AddSpeakerComponent } from './components/speakers/add-speaker/add-speaker.component';
 import { SpeakersComponent } from './components/speakers/speakers.component';
+import { SessionsComponent } from './components/sessions/sessions.component';
+import { AddSessionComponent } from './components/sessions/add-session/add-session.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { SpeakersComponent } from './components/speakers/speakers.component';
     TracksComponent,
     AddTrackComponent,
     SpeakersComponent,
-    AddSpeakerComponent
+    AddSpeakerComponent,
+    SessionsComponent,
+    AddSessionComponent
   ],
   imports: [
     BrowserModule,

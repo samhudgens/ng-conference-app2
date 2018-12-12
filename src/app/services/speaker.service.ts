@@ -36,7 +36,7 @@ export class SpeakerService {
   }
 
   // This method was already run once to populate the database
-  uploadSpeakersfromJSON() {
+  uploadSpeakersFromJSON() {
     const dataJSON = require('../../assets/data/data.json');
     const speakers = dataJSON.speakers as Speaker[];
     speakers.forEach(spk => {

@@ -22,6 +22,6 @@ export interface Session {
   timeEnd?: string,
   location?: string,
   description?: string,
-  speckerNames: string[]
+  speakerNames: string[]
   tracks: string[]
 }

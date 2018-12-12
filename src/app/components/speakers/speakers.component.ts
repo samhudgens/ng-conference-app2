@@ -14,7 +14,7 @@ export class SpeakersComponent implements OnInit {
   constructor(private speakerService: SpeakerService) { }
 
   ngOnInit() {
-    // this.speakerService.uploadSpeakersfromJSON();
+    // this.speakerService.uploadSpeakersFromJSON();
     // We already ran the above method once to populate the database
     this.speakerService.getSpeakers().subscribe(
       (data: Speaker[]) => { this.speakers = data }
