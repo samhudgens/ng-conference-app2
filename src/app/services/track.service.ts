@@ -16,7 +16,7 @@ export class TrackService {
 
   constructor(private afs: AngularFirestore) { 
     this.tracksCollection = this.afs.collection(
-      'Tracks', ref => ref.orderBy('name', 'asc'));
+      'test-tracks', ref => ref.orderBy('name', 'asc'));
   }
 
   getTracks(): Observable<Track[]> {

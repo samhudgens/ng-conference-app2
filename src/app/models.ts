@@ -12,7 +12,7 @@ export interface Speaker {
   location?: string,
   email: string,
   phone?: string,
-  sessions: [string]   // id of session
+  sessions: string[]   // id of session
 }
 
 export interface Session {
@@ -22,6 +22,6 @@ export interface Session {
   timeEnd?: string,
   location?: string,
   description?: string,
-  speckerNames: [Speaker]
-  tracks: [string]
+  speckerNames: string[]
+  tracks: string[]
 }

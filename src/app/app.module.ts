@@ -14,12 +14,16 @@ import { SpeakerService } from './services/speaker.service';
 import { TracksComponent } from './components/tracks/tracks.component';
 import { AddTrackComponent } from './components/tracks/add-track/add-track.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AddSpeakerComponent } from './components/speakers/add-speaker/add-speaker.component';
+import { SpeakersComponent } from './components/speakers/speakers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TracksComponent,
-    AddTrackComponent
+    AddTrackComponent,
+    SpeakersComponent,
+    AddSpeakerComponent
   ],
   imports: [
     BrowserModule,
