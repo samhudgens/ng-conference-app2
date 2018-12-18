@@ -6,25 +6,30 @@ import { AddTrackComponent } from "./components/tracks/add-track/add-track.compo
 import { SpeakersComponent } from "./components/speakers/speakers.component";
 import { AddSpeakerComponent } from "./components/speakers/add-speaker/add-speaker.component";
 import { SessionsComponent } from "./components/sessions/sessions.component";
-import { AddSessionComponent } from "./components/sessions/add-session/add-session.component";
+import { EditSessionComponent } from "./components/sessions/edit-session/edit-session.component";
+import { AddSpeakersComponent } from "./components/sessions/add-speakers/add-speakers.component";
+import { AddTracksComponent } from "./components/sessions/add-tracks/add-tracks.component";
 
 const appRoutes : Routes = [
   { path: '', component: TracksComponent },
   { path: 'tracks', component: TracksComponent,
     children: [
       { path: 'add', component: AddTrackComponent }
-    ]
-  },
+    ]},
   { path: 'speakers', component: SpeakersComponent,
     children: [
       { path: 'add', component: AddSpeakerComponent }
-    ]
-  },
+  ]},
   { path: 'sessions', component: SessionsComponent,
     children: [
-      { path: 'add', component: AddSessionComponent }
+      { path: 'edit/:mode', component: EditSessionComponent, 
+        children: [
+          { path: 'speakers', component: AddSpeakersComponent },
+          { path: 'tracks', component: AddTracksComponent }    
+        ]
+      },
     ]
-  }
+  }  
 ];
 
 @NgModule({
